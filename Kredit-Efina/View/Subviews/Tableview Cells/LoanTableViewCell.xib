@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoanTableViewCell" id="KGk-i7-Jjw" customClass="LoanTableViewCell" customModule="Kredit_Efina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x37-aU-w0D">
+                        <rect key="frame" x="0.0" y="12" width="320" height="58"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan-image" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-2B-Pjc">
+                                <rect key="frame" x="16" y="21" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="B5L-jD-2eD"/>
+                                    <constraint firstAttribute="width" constant="16" id="FgB-dX-rAB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-wX-eVT">
+                                <rect key="frame" x="48" y="19" width="256" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbF-GF-dth">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Weeks ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-su-ZE2">
+                                        <rect key="frame" x="147" y="0.0" width="109" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="60x-XV-eKG"/>
+                            <constraint firstItem="iW5-wX-eVT" firstAttribute="leading" secondItem="gDq-2B-Pjc" secondAttribute="trailing" constant="16" id="6kA-P5-NRL"/>
+                            <constraint firstAttribute="trailing" secondItem="iW5-wX-eVT" secondAttribute="trailing" constant="16" id="7uu-Eb-54k"/>
+                            <constraint firstItem="iW5-wX-eVT" firstAttribute="centerY" secondItem="gDq-2B-Pjc" secondAttribute="centerY" id="CHd-JG-hDM"/>
+                            <constraint firstItem="gDq-2B-Pjc" firstAttribute="leading" secondItem="x37-aU-w0D" secondAttribute="leading" constant="16" id="Zgw-mg-lsr"/>
+                            <constraint firstItem="gDq-2B-Pjc" firstAttribute="centerY" secondItem="x37-aU-w0D" secondAttribute="centerY" id="bnB-Of-Ffx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="x37-aU-w0D" secondAttribute="trailing" id="1jX-DD-D8v"/>
+                    <constraint firstItem="x37-aU-w0D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LRq-bz-ZdM"/>
+                    <constraint firstItem="x37-aU-w0D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tV8-sJ-IW7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mainView" destination="x37-aU-w0D" id="lnU-0C-iD4"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="93"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="loan-image" width="14" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

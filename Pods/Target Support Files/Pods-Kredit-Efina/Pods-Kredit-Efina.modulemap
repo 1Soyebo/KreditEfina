@@ -1,0 +1,6 @@
+framework module Pods_Kredit_Efina {
+  umbrella header "Pods-Kredit-Efina-umbrella.h"
+
+  export *
+  module * { export * }
+}

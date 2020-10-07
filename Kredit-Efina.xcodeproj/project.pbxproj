@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D29B2B48B9767991C4FDA9D /* Pods_Kredit_Efina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D431DF62460E443D732966 /* Pods_Kredit_Efina.framework */; };
+		2B65FA1C252BA2C10087D342 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */; };
+		2B65FA20252BA3A30087D342 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA1E252BA3A30087D342 /* ProfileTableViewCell.swift */; };
+		2B65FA21252BA3A30087D342 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA1F252BA3A30087D342 /* ProfileTableViewCell.xib */; };
+		2B65FA2F252CC6470087D342 /* LoanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA2D252CC6470087D342 /* LoanTableViewCell.swift */; };
+		2B65FA30252CC6470087D342 /* LoanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA2E252CC6470087D342 /* LoanTableViewCell.xib */; };
+		2B65FA33252CC83F0087D342 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA32252CC83F0087D342 /* LoanViewController.swift */; };
+		2B65FA37252CD6460087D342 /* CreditScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */; };
+		2B65FA38252CD6460087D342 /* CreditScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */; };
+		2B65FA3D252CDA8D0087D342 /* PyschometryTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */; };
+		2B65FA3E252CDA8D0087D342 /* PyschometryTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */; };
+		2B65FA48252CDEE10087D342 /* ViewDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA47252CDEE10087D342 /* ViewDivider.swift */; };
+		2B65FA4B252CE04F0087D342 /* PsychTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA4A252CE04F0087D342 /* PsychTextField.swift */; };
+		2BAD4670252CEAB2006E2507 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD466F252CEAB2006E2507 /* WalletViewController.swift */; };
+		2BAD4674252CEECF006E2507 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */; };
+		2BAD4675252CEECF006E2507 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */; };
+		2BAD4679252D0005006E2507 /* SearchLoansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD4677252D0005006E2507 /* SearchLoansViewController.swift */; };
+		2BAD467A252D0005006E2507 /* SearchLoansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD4678252D0005006E2507 /* SearchLoansViewController.xib */; };
+		2BAD4680252D03C9006E2507 /* AddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD467E252D03C9006E2507 /* AddNewCardViewController.swift */; };
+		2BAD4681252D03C9006E2507 /* AddNewCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD467F252D03C9006E2507 /* AddNewCardViewController.xib */; };
+		2BF47397252B2F1D000C7009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF47396252B2F1D000C7009 /* AppDelegate.swift */; };
+		2BF47399252B2F1D000C7009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF47398252B2F1D000C7009 /* SceneDelegate.swift */; };
+		2BF4739B252B2F1D000C7009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF4739A252B2F1D000C7009 /* ViewController.swift */; };
+		2BF4739E252B2F1D000C7009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF4739C252B2F1D000C7009 /* Main.storyboard */; };
+		2BF473A0252B2F20000C7009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF4739F252B2F20000C7009 /* Assets.xcassets */; };
+		2BF473A3252B2F20000C7009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF473A1252B2F20000C7009 /* LaunchScreen.storyboard */; };
+		2BF473B2252B3A47000C7009 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473B1252B3A47000C7009 /* Constants.swift */; };
+		2BF473B6252B3A9E000C7009 /* InterfaceBuilderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473B5252B3A9E000C7009 /* InterfaceBuilderHelper.swift */; };
+		2BF473BB252B3C03000C7009 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473BA252B3C03000C7009 /* LoginViewController.swift */; };
+		2BF473BF252B3C6D000C7009 /* HelprClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473BE252B3C6D000C7009 /* HelprClass.swift */; };
+		2BF473C2252B3FC0000C7009 /* PreferredLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473C1252B3FC0000C7009 /* PreferredLanguageViewController.swift */; };
+		2BF473C6252B44FB000C7009 /* DescribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473C4252B44FB000C7009 /* DescribeViewController.swift */; };
+		2BF473C7252B44FB000C7009 /* DescribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF473C5252B44FB000C7009 /* DescribeViewController.xib */; };
+		2BF473CD252B4695000C7009 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473CB252B4695000C7009 /* DescriptionTableViewCell.swift */; };
+		2BF473CE252B4695000C7009 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF473CC252B4695000C7009 /* DescriptionTableViewCell.xib */; };
+		2BF473D4252B50CE000C7009 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473D2252B50CE000C7009 /* CreateAccountViewController.swift */; };
+		2BF473D5252B50CE000C7009 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF473D3252B50CE000C7009 /* CreateAccountViewController.xib */; };
+		2BF473E5252B5700000C7009 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473E3252B5700000C7009 /* OTPViewController.swift */; };
+		2BF473E6252B5700000C7009 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF473E4252B5700000C7009 /* OTPViewController.xib */; };
+		2BF473F7252B8033000C7009 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF473F5252B8033000C7009 /* HomeViewController.swift */; };
+		2BF4740F252B8BC4000C7009 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF4740D252B8BC4000C7009 /* TransactionsTableViewCell.swift */; };
+		2BF47410252B8BC4000C7009 /* TransactionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF4740E252B8BC4000C7009 /* TransactionsTableViewCell.xib */; };
+		2BF47416252B983A000C7009 /* LoanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF47414252B983A000C7009 /* LoanCollectionViewCell.swift */; };
+		2BF47417252B983A000C7009 /* LoanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF47415252B983A000C7009 /* LoanCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2B65FA1E252BA3A30087D342 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2B65FA1F252BA3A30087D342 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		2B65FA2D252CC6470087D342 /* LoanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTableViewCell.swift; sourceTree = "<group>"; };
+		2B65FA2E252CC6470087D342 /* LoanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanTableViewCell.xib; sourceTree = "<group>"; };
+		2B65FA32252CC83F0087D342 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
+		2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewController.swift; sourceTree = "<group>"; };
+		2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreViewController.xib; sourceTree = "<group>"; };
+		2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyschometryTestViewController.swift; sourceTree = "<group>"; };
+		2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PyschometryTestViewController.xib; sourceTree = "<group>"; };
+		2B65FA47252CDEE10087D342 /* ViewDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDivider.swift; sourceTree = "<group>"; };
+		2B65FA4A252CE04F0087D342 /* PsychTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychTextField.swift; sourceTree = "<group>"; };
+		2BAD466F252CEAB2006E2507 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		2BAD4677252D0005006E2507 /* SearchLoansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLoansViewController.swift; sourceTree = "<group>"; };
+		2BAD4678252D0005006E2507 /* SearchLoansViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchLoansViewController.xib; sourceTree = "<group>"; };
+		2BAD467E252D03C9006E2507 /* AddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardViewController.swift; sourceTree = "<group>"; };
+		2BAD467F252D03C9006E2507 /* AddNewCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewCardViewController.xib; sourceTree = "<group>"; };
+		2BF47393252B2F1D000C7009 /* Kredit-Efina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kredit-Efina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF47396252B2F1D000C7009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BF47398252B2F1D000C7009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2BF4739A252B2F1D000C7009 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BF4739D252B2F1D000C7009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BF4739F252B2F20000C7009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF473A2252B2F20000C7009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BF473A4252B2F20000C7009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF473B1252B3A47000C7009 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BF473B5252B3A9E000C7009 /* InterfaceBuilderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceBuilderHelper.swift; sourceTree = "<group>"; };
+		2BF473BA252B3C03000C7009 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2BF473BE252B3C6D000C7009 /* HelprClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelprClass.swift; sourceTree = "<group>"; };
+		2BF473C1252B3FC0000C7009 /* PreferredLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredLanguageViewController.swift; sourceTree = "<group>"; };
+		2BF473C4252B44FB000C7009 /* DescribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeViewController.swift; sourceTree = "<group>"; };
+		2BF473C5252B44FB000C7009 /* DescribeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescribeViewController.xib; sourceTree = "<group>"; };
+		2BF473CB252B4695000C7009 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		2BF473CC252B4695000C7009 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		2BF473D2252B50CE000C7009 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		2BF473D3252B50CE000C7009 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		2BF473E3252B5700000C7009 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		2BF473E4252B5700000C7009 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		2BF473F5252B8033000C7009 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2BF4740D252B8BC4000C7009 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		2BF4740E252B8BC4000C7009 /* TransactionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsTableViewCell.xib; sourceTree = "<group>"; };
+		2BF47414252B983A000C7009 /* LoanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCollectionViewCell.swift; sourceTree = "<group>"; };
+		2BF47415252B983A000C7009 /* LoanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanCollectionViewCell.xib; sourceTree = "<group>"; };
+		41D431DF62460E443D732966 /* Pods_Kredit_Efina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kredit_Efina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7C149007AF1F18375E7C29 /* Pods-Kredit-Efina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredit-Efina.release.xcconfig"; path = "Target Support Files/Pods-Kredit-Efina/Pods-Kredit-Efina.release.xcconfig"; sourceTree = "<group>"; };
+		8EC57229153546E04A78179E /* Pods-Kredit-Efina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kredit-Efina.debug.xcconfig"; path = "Target Support Files/Pods-Kredit-Efina/Pods-Kredit-Efina.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF47390252B2F1D000C7009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D29B2B48B9767991C4FDA9D /* Pods_Kredit_Efina.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B65FA23252C53920087D342 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B65FA41252CDE220087D342 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BF473D0252B469D000C7009 /* Subviews */,
+				2B65FA47252CDEE10087D342 /* ViewDivider.swift */,
+				2B65FA4A252CE04F0087D342 /* PsychTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BF4738A252B2F1D000C7009 = {
+			isa = PBXGroup;
+			children = (
+				2BF47395252B2F1D000C7009 /* Kredit-Efina */,
+				2BF47394252B2F1D000C7009 /* Products */,
+				D5FAA6A739727C33CAE7484E /* Pods */,
+				5B755530B0C1877F18042E9E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF47394252B2F1D000C7009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF47393252B2F1D000C7009 /* Kredit-Efina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF47395252B2F1D000C7009 /* Kredit-Efina */ = {
+			isa = PBXGroup;
+			children = (
+				2B65FA41252CDE220087D342 /* View */,
+				2B65FA23252C53920087D342 /* Models */,
+				2BF473C9252B4504000C7009 /* Resources */,
+				2BF473B9252B3BE5000C7009 /* Controllers */,
+				2BF473B4252B3A7E000C7009 /* Helpers */,
+				2BF47396252B2F1D000C7009 /* AppDelegate.swift */,
+				2BF47398252B2F1D000C7009 /* SceneDelegate.swift */,
+				2BF4739F252B2F20000C7009 /* Assets.xcassets */,
+				2BF473A1252B2F20000C7009 /* LaunchScreen.storyboard */,
+				2BF473A4252B2F20000C7009 /* Info.plist */,
+			);
+			path = "Kredit-Efina";
+			sourceTree = "<group>";
+		};
+		2BF473B4252B3A7E000C7009 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BF473B5252B3A9E000C7009 /* InterfaceBuilderHelper.swift */,
+				2BF473B1252B3A47000C7009 /* Constants.swift */,
+				2BF473BE252B3C6D000C7009 /* HelprClass.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2BF473B9252B3BE5000C7009 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BAD467E252D03C9006E2507 /* AddNewCardViewController.swift */,
+				2BAD4677252D0005006E2507 /* SearchLoansViewController.swift */,
+				2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */,
+				2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */,
+				2BF473F3252B7FF2000C7009 /* TabBar */,
+				2BF473E3252B5700000C7009 /* OTPViewController.swift */,
+				2BF473C4252B44FB000C7009 /* DescribeViewController.swift */,
+				2BF473D2252B50CE000C7009 /* CreateAccountViewController.swift */,
+				2BF473BA252B3C03000C7009 /* LoginViewController.swift */,
+				2BF473C1252B3FC0000C7009 /* PreferredLanguageViewController.swift */,
+				2BF4739A252B2F1D000C7009 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2BF473C9252B4504000C7009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BAD467F252D03C9006E2507 /* AddNewCardViewController.xib */,
+				2BAD4678252D0005006E2507 /* SearchLoansViewController.xib */,
+				2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */,
+				2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */,
+				2BF473F4252B7FFE000C7009 /* TabBar */,
+				2BF473C5252B44FB000C7009 /* DescribeViewController.xib */,
+				2BF473D3252B50CE000C7009 /* CreateAccountViewController.xib */,
+				2BF473E4252B5700000C7009 /* OTPViewController.xib */,
+				2BF4739C252B2F1D000C7009 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BF473D0252B469D000C7009 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				2BF47413252B969B000C7009 /* Collectionview Cells */,
+				2BF47412252B968A000C7009 /* Tableview Cells */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		2BF473F3252B7FF2000C7009 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2BF473F5252B8033000C7009 /* HomeViewController.swift */,
+				2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */,
+				2B65FA32252CC83F0087D342 /* LoanViewController.swift */,
+				2BAD466F252CEAB2006E2507 /* WalletViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2BF473F4252B7FFE000C7009 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2BF47412252B968A000C7009 /* Tableview Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BF473CB252B4695000C7009 /* DescriptionTableViewCell.swift */,
+				2BF473CC252B4695000C7009 /* DescriptionTableViewCell.xib */,
+				2BF4740D252B8BC4000C7009 /* TransactionsTableViewCell.swift */,
+				2BF4740E252B8BC4000C7009 /* TransactionsTableViewCell.xib */,
+				2B65FA1E252BA3A30087D342 /* ProfileTableViewCell.swift */,
+				2B65FA1F252BA3A30087D342 /* ProfileTableViewCell.xib */,
+				2B65FA2D252CC6470087D342 /* LoanTableViewCell.swift */,
+				2B65FA2E252CC6470087D342 /* LoanTableViewCell.xib */,
+				2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */,
+				2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */,
+			);
+			path = "Tableview Cells";
+			sourceTree = "<group>";
+		};
+		2BF47413252B969B000C7009 /* Collectionview Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BF47414252B983A000C7009 /* LoanCollectionViewCell.swift */,
+				2BF47415252B983A000C7009 /* LoanCollectionViewCell.xib */,
+			);
+			path = "Collectionview Cells";
+			sourceTree = "<group>";
+		};
+		5B755530B0C1877F18042E9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41D431DF62460E443D732966 /* Pods_Kredit_Efina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5FAA6A739727C33CAE7484E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EC57229153546E04A78179E /* Pods-Kredit-Efina.debug.xcconfig */,
+				5F7C149007AF1F18375E7C29 /* Pods-Kredit-Efina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF47392252B2F1D000C7009 /* Kredit-Efina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF473A7252B2F20000C7009 /* Build configuration list for PBXNativeTarget "Kredit-Efina" */;
+			buildPhases = (
+				9CA8EF228197A1B23F1ECFAE /* [CP] Check Pods Manifest.lock */,
+				2BF4738F252B2F1D000C7009 /* Sources */,
+				2BF47390252B2F1D000C7009 /* Frameworks */,
+				2BF47391252B2F1D000C7009 /* Resources */,
+				C3DE74687BBDAA025874CAB0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kredit-Efina";
+			productName = "Kredit-Efina";
+			productReference = 2BF47393252B2F1D000C7009 /* Kredit-Efina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF4738B252B2F1D000C7009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2BF47392252B2F1D000C7009 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 2BF4738E252B2F1D000C7009 /* Build configuration list for PBXProject "Kredit-Efina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BF4738A252B2F1D000C7009;
+			productRefGroup = 2BF47394252B2F1D000C7009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF47392252B2F1D000C7009 /* Kredit-Efina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF47391252B2F1D000C7009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B65FA38252CD6460087D342 /* CreditScoreViewController.xib in Resources */,
+				2BAD4675252CEECF006E2507 /* CardTableViewCell.xib in Resources */,
+				2B65FA30252CC6470087D342 /* LoanTableViewCell.xib in Resources */,
+				2BF473A3252B2F20000C7009 /* LaunchScreen.storyboard in Resources */,
+				2BF473CE252B4695000C7009 /* DescriptionTableViewCell.xib in Resources */,
+				2BF47410252B8BC4000C7009 /* TransactionsTableViewCell.xib in Resources */,
+				2B65FA3E252CDA8D0087D342 /* PyschometryTestViewController.xib in Resources */,
+				2BF473D5252B50CE000C7009 /* CreateAccountViewController.xib in Resources */,
+				2BF47417252B983A000C7009 /* LoanCollectionViewCell.xib in Resources */,
+				2BAD4681252D03C9006E2507 /* AddNewCardViewController.xib in Resources */,
+				2BF473A0252B2F20000C7009 /* Assets.xcassets in Resources */,
+				2BF473E6252B5700000C7009 /* OTPViewController.xib in Resources */,
+				2BF4739E252B2F1D000C7009 /* Main.storyboard in Resources */,
+				2BF473C7252B44FB000C7009 /* DescribeViewController.xib in Resources */,
+				2B65FA21252BA3A30087D342 /* ProfileTableViewCell.xib in Resources */,
+				2BAD467A252D0005006E2507 /* SearchLoansViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CA8EF228197A1B23F1ECFAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kredit-Efina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DE74687BBDAA025874CAB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kredit-Efina/Pods-Kredit-Efina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kredit-Efina/Pods-Kredit-Efina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kredit-Efina/Pods-Kredit-Efina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF4738F252B2F1D000C7009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B65FA48252CDEE10087D342 /* ViewDivider.swift in Sources */,
+				2BF473E5252B5700000C7009 /* OTPViewController.swift in Sources */,
+				2BAD4679252D0005006E2507 /* SearchLoansViewController.swift in Sources */,
+				2BF473BB252B3C03000C7009 /* LoginViewController.swift in Sources */,
+				2BF4740F252B8BC4000C7009 /* TransactionsTableViewCell.swift in Sources */,
+				2BF473B6252B3A9E000C7009 /* InterfaceBuilderHelper.swift in Sources */,
+				2BAD4674252CEECF006E2507 /* CardTableViewCell.swift in Sources */,
+				2BAD4670252CEAB2006E2507 /* WalletViewController.swift in Sources */,
+				2BF473C2252B3FC0000C7009 /* PreferredLanguageViewController.swift in Sources */,
+				2B65FA3D252CDA8D0087D342 /* PyschometryTestViewController.swift in Sources */,
+				2BF473D4252B50CE000C7009 /* CreateAccountViewController.swift in Sources */,
+				2B65FA1C252BA2C10087D342 /* ProfileViewController.swift in Sources */,
+				2B65FA2F252CC6470087D342 /* LoanTableViewCell.swift in Sources */,
+				2BF473C6252B44FB000C7009 /* DescribeViewController.swift in Sources */,
+				2BF4739B252B2F1D000C7009 /* ViewController.swift in Sources */,
+				2BF47397252B2F1D000C7009 /* AppDelegate.swift in Sources */,
+				2B65FA4B252CE04F0087D342 /* PsychTextField.swift in Sources */,
+				2BF473CD252B4695000C7009 /* DescriptionTableViewCell.swift in Sources */,
+				2B65FA37252CD6460087D342 /* CreditScoreViewController.swift in Sources */,
+				2B65FA20252BA3A30087D342 /* ProfileTableViewCell.swift in Sources */,
+				2BF47416252B983A000C7009 /* LoanCollectionViewCell.swift in Sources */,
+				2BF47399252B2F1D000C7009 /* SceneDelegate.swift in Sources */,
+				2BF473B2252B3A47000C7009 /* Constants.swift in Sources */,
+				2B65FA33252CC83F0087D342 /* LoanViewController.swift in Sources */,
+				2BF473F7252B8033000C7009 /* HomeViewController.swift in Sources */,
+				2BF473BF252B3C6D000C7009 /* HelprClass.swift in Sources */,
+				2BAD4680252D03C9006E2507 /* AddNewCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BF4739C252B2F1D000C7009 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF4739D252B2F1D000C7009 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF473A1252B2F20000C7009 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF473A2252B2F20000C7009 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BF473A5252B2F20000C7009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BF473A6252B2F20000C7009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF473A8252B2F20000C7009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC57229153546E04A78179E /* Pods-Kredit-Efina.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 283Q35B3B3;
+				INFOPLIST_FILE = "Kredit-Efina/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soyeboibukun.Kredit-Efina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF473A9252B2F20000C7009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7C149007AF1F18375E7C29 /* Pods-Kredit-Efina.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 283Q35B3B3;
+				INFOPLIST_FILE = "Kredit-Efina/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soyeboibukun.Kredit-Efina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF4738E252B2F1D000C7009 /* Build configuration list for PBXProject "Kredit-Efina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF473A5252B2F20000C7009 /* Debug */,
+				2BF473A6252B2F20000C7009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF473A7252B2F20000C7009 /* Build configuration list for PBXNativeTarget "Kredit-Efina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF473A8252B2F20000C7009 /* Debug */,
+				2BF473A9252B2F20000C7009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF4738B252B2F1D000C7009 /* Project object */;
+}

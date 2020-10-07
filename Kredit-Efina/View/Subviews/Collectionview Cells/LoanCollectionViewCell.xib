@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoanCollectionViewCell" id="gTV-IL-0wX" customClass="LoanCollectionViewCell" customModule="Kredit_Efina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-Mi-LSb">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agriculture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNH-Ub-wig">
+                                <rect key="frame" x="30.5" y="19" width="48.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₦100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-C5-ire">
+                                <rect key="frame" x="16" y="34" width="77" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itM-3p-keq">
+                                <rect key="frame" x="134.5" y="34" width="27.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60days Payback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M98-4f-hX4">
+                                <rect key="frame" x="15" y="58.5" width="79" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVw-xr-NMp">
+                                <rect key="frame" x="131.5" y="58.5" width="34" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kNH-Ub-wig" firstAttribute="centerX" secondItem="gJt-C5-ire" secondAttribute="centerX" id="6xI-AH-Mnb"/>
+                            <constraint firstItem="M98-4f-hX4" firstAttribute="top" secondItem="gJt-C5-ire" secondAttribute="bottom" constant="4" id="7R5-ls-xlm"/>
+                            <constraint firstItem="M98-4f-hX4" firstAttribute="centerX" secondItem="gJt-C5-ire" secondAttribute="centerX" id="8NQ-1d-2It"/>
+                            <constraint firstItem="SVw-xr-NMp" firstAttribute="top" secondItem="itM-3p-keq" secondAttribute="bottom" constant="4" id="8Yl-Ob-xoj"/>
+                            <constraint firstItem="gJt-C5-ire" firstAttribute="leading" secondItem="EDd-Mi-LSb" secondAttribute="leading" constant="16" id="9eG-QI-K6p"/>
+                            <constraint firstItem="SVw-xr-NMp" firstAttribute="centerX" secondItem="itM-3p-keq" secondAttribute="centerX" id="DGB-5T-wik"/>
+                            <constraint firstItem="itM-3p-keq" firstAttribute="centerY" secondItem="EDd-Mi-LSb" secondAttribute="centerY" id="KOT-Yu-um3"/>
+                            <constraint firstItem="gJt-C5-ire" firstAttribute="top" secondItem="kNH-Ub-wig" secondAttribute="bottom" constant="4" id="WKn-iV-neM"/>
+                            <constraint firstAttribute="trailing" secondItem="itM-3p-keq" secondAttribute="trailing" constant="16" id="mIg-7i-FsX"/>
+                            <constraint firstItem="gJt-C5-ire" firstAttribute="centerY" secondItem="EDd-Mi-LSb" secondAttribute="centerY" id="oHH-gl-cHS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EDd-Mi-LSb" secondAttribute="trailing" id="Akk-1Z-fqS"/>
+                <constraint firstItem="EDd-Mi-LSb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DmX-FW-1T6"/>
+                <constraint firstAttribute="bottom" secondItem="EDd-Mi-LSb" secondAttribute="bottom" id="Tbq-ao-8Ms"/>
+                <constraint firstItem="EDd-Mi-LSb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hJJ-9p-E0J"/>
+            </constraints>
+            <size key="customSize" width="181" height="124"/>
+            <point key="canvasLocation" x="18.115942028985508" y="67.633928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

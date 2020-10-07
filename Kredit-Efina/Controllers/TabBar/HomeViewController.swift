@@ -1,0 +1,99 @@
+//
+//  HomeViewController.swift
+//  Kredit-Efina
+//
+//  Created by Ibukunoluwa Soyebo on 05/10/2020.
+//
+
+import UIKit
+
+class HomeViewController: UIViewController {
+
+    @IBOutlet weak var blueCurvedView: UIView!
+    @IBOutlet weak var creditScoreCardView: UIView!
+    @IBOutlet weak var imgUser: UIImageView!
+    @IBOutlet weak var tblTransactions: UITableView!
+    @IBOutlet weak var collLoans: UICollectionView!
+    @IBOutlet weak var collectionPageControl: UIPageControl!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        curveSomeUiElements()
+        configureTblTransaactions()
+        configureCollLoans()
+        collectionPageControl.numberOfPages = 5
+    }
+
+    fileprivate func curveSomeUiElements(){
+        blueCurvedView.layer.cornerRadius = 20
+        creditScoreCardView.layer.cornerRadius = 10
+        imgUser.layer.cornerRadius = imgUser.frame.size.height/2
+    }
+
+    fileprivate func configureTblTransaactions(){
+        tblTransactions.delegate = self
+        tblTransactions.dataSource = self
+        tblTransactions.register(UINib(nibName: TransactionsTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TransactionsTableViewCell.identifier)
+        tblTransactions.tableFooterView = UIView()
+        tblTransactions.layer.cornerRadius = 5
+        tblTransactions.backgroundColor = .clear
+    }
+    
+    fileprivate func configureCollLoans(){
+        collLoans.delegate = self
+        collLoans.dataSource = self
+        collLoans.register(UINib(nibName: LoanCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: LoanCollectionViewCell.identifier)
+        collLoans.backgroundColor = .clear
+        collLoans.showsHorizontalScrollIndicator = false
+    }
+
+    @IBAction func goToCreditScore(_ sender: Any) {
+        print("k")
+        let creditVc = CreditScoreViewController(nibName:"CreditScoreViewController", bundle:nil)
+        self.navigationController?.pushViewController(creditVc, animated: true)
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let transactionTVC = tblTransactions.dequeueReusableCell(withIdentifier: TransactionsTableViewCell.identifier, for: indexPath) as! TransactionsTableViewCell
+        transactionTVC.imgIcon.image = (indexPath.row % 2 == 0 ) ? UIImage(named: "Credit Icon"): UIImage(named: "Debit Icon")
+        transactionTVC.lblAmount.textColor = (indexPath.row % 2 == 0) ? .kreditDarkRed:.kreditDarkGreen
+        transactionTVC.lblTitle.text = (indexPath.row % 2 == 0) ? "Loan Payback":"Loan Request"
+        transactionTVC.selectionStyle = .none
+        return transactionTVC
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tblTransactions.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let loanCell = collLoans.dequeueReusableCell(withReuseIdentifier: LoanCollectionViewCell.identifier, for: indexPath)
+        return loanCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 178.0, height: 88.0)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSet = collLoans.contentOffset.x
+        let width = CGFloat(178)
+        let horizontalCenter = width / 2
+
+        collectionPageControl.currentPage = Int(offSet + horizontalCenter) / Int(width)
+    }
+    
+}

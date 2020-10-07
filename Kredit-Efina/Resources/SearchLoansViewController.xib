@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchLoansViewController" customModule="Kredit_Efina" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSearch" destination="Rhr-sI-YDg" id="wvF-0X-9rK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLoanAmount" destination="cCU-gc-4lB" id="bag-k6-F0Z"/>
+                <outlet property="viewMinimumPaybacktime" destination="yKj-iH-8KC" id="T6b-PL-DaV"/>
+                <outlet property="viewMiniumumNitrestRate" destination="4mV-P2-s41" id="5CR-qt-Ybl"/>
+                <outlet property="viewPurposeLoan" destination="cyj-Nz-KWe" id="VaL-sd-fib"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJd-73-PHs">
+                    <rect key="frame" x="16" y="20" width="76.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rI3-s8-3bd">
+                    <rect key="frame" x="16" y="65" width="343" height="328"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-Nz-KWe">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qtb-R1-J5U">
+                                    <rect key="frame" x="8" y="8" width="327" height="55.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purpose of Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giX-4T-Eqd">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzM-Zp-n1e">
+                                            <rect key="frame" x="0.0" y="24" width="327" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstItem="qtb-R1-J5U" firstAttribute="top" secondItem="cyj-Nz-KWe" secondAttribute="top" constant="8" id="Ado-Xo-1es"/>
+                                <constraint firstAttribute="trailing" secondItem="qtb-R1-J5U" secondAttribute="trailing" constant="8" id="BWf-C8-tP7"/>
+                                <constraint firstAttribute="bottom" secondItem="qtb-R1-J5U" secondAttribute="bottom" constant="6.5" id="GuP-v4-qU3"/>
+                                <constraint firstItem="qtb-R1-J5U" firstAttribute="leading" secondItem="cyj-Nz-KWe" secondAttribute="leading" constant="8" id="vj5-8V-vcb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCU-gc-4lB">
+                            <rect key="frame" x="0.0" y="86" width="343" height="70"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="F7t-xc-78d">
+                                    <rect key="frame" x="8" y="8" width="327" height="55.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdM-Nb-Rpc">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-bB-USi">
+                                            <rect key="frame" x="0.0" y="24" width="327" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstItem="F7t-xc-78d" firstAttribute="top" secondItem="cCU-gc-4lB" secondAttribute="top" constant="8" id="AFq-KV-qIJ"/>
+                                <constraint firstAttribute="bottom" secondItem="F7t-xc-78d" secondAttribute="bottom" constant="6.5" id="Bdq-Yd-ikn"/>
+                                <constraint firstAttribute="trailing" secondItem="F7t-xc-78d" secondAttribute="trailing" constant="8" id="Cs3-wA-7xe"/>
+                                <constraint firstItem="F7t-xc-78d" firstAttribute="leading" secondItem="cCU-gc-4lB" secondAttribute="leading" constant="8" id="fxB-pA-wTO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mV-P2-s41">
+                            <rect key="frame" x="0.0" y="172" width="343" height="70"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DGt-8Q-Yq5">
+                                    <rect key="frame" x="8" y="8" width="327" height="55.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Interest Rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbt-cL-YXB">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kco-87-dq8">
+                                            <rect key="frame" x="0.0" y="24" width="327" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstItem="DGt-8Q-Yq5" firstAttribute="top" secondItem="4mV-P2-s41" secondAttribute="top" constant="8" id="2YO-gc-6nT"/>
+                                <constraint firstItem="DGt-8Q-Yq5" firstAttribute="leading" secondItem="4mV-P2-s41" secondAttribute="leading" constant="8" id="RJJ-h3-c8q"/>
+                                <constraint firstAttribute="trailing" secondItem="DGt-8Q-Yq5" secondAttribute="trailing" constant="8" id="U2q-0N-El8"/>
+                                <constraint firstAttribute="bottom" secondItem="DGt-8Q-Yq5" secondAttribute="bottom" constant="6.5" id="wuS-Ll-Rgc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKj-iH-8KC">
+                            <rect key="frame" x="0.0" y="258" width="343" height="70"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-XI-zAT">
+                                    <rect key="frame" x="8" y="8" width="327" height="55.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Payback Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfx-Tv-FxQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXx-IE-Px4">
+                                            <rect key="frame" x="0.0" y="24" width="327" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstItem="A0A-XI-zAT" firstAttribute="top" secondItem="yKj-iH-8KC" secondAttribute="top" constant="8" id="9Mb-0s-guw"/>
+                                <constraint firstAttribute="trailing" secondItem="A0A-XI-zAT" secondAttribute="trailing" constant="8" id="EaB-pE-MXB"/>
+                                <constraint firstItem="A0A-XI-zAT" firstAttribute="leading" secondItem="yKj-iH-8KC" secondAttribute="leading" constant="8" id="Qlc-VO-Swc"/>
+                                <constraint firstAttribute="bottom" secondItem="A0A-XI-zAT" secondAttribute="bottom" constant="6.5" id="UYF-Fa-MHW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhr-sI-YDg">
+                    <rect key="frame" x="16" y="417" width="343" height="50"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LTa-dw-TBk"/>
+                    </constraints>
+                    <state key="normal" title="Search">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rI3-s8-3bd" firstAttribute="top" secondItem="OJd-73-PHs" secondAttribute="bottom" constant="16" id="B1z-0e-CVh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rI3-s8-3bd" secondAttribute="trailing" constant="16" id="ELO-Lg-q7p"/>
+                <constraint firstItem="Rhr-sI-YDg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ENs-TV-N1x"/>
+                <constraint firstItem="OJd-73-PHs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Gem-Hm-5qU"/>
+                <constraint firstItem="rI3-s8-3bd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Vd7-Mj-S4z"/>
+                <constraint firstItem="OJd-73-PHs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="f09-oh-URH"/>
+                <constraint firstItem="Rhr-sI-YDg" firstAttribute="top" secondItem="rI3-s8-3bd" secondAttribute="bottom" constant="24" id="qsG-86-clr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rhr-sI-YDg" secondAttribute="trailing" constant="16" id="uUX-0h-ukn"/>
+            </constraints>
+            <point key="canvasLocation" x="112.8" y="67.916041979010501"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DescribeViewController" customModule="Kredit_Efina" customModuleProvider="target">
+            <connections>
+                <outlet property="tblDescribe" destination="IVr-hW-0Nb" id="2f8-b1-yux"/>
+                <outlet property="view" destination="O5s-Zf-sHk" id="yo1-d8-yK0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="O5s-Zf-sHk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms3-Hz-5oL">
+                    <rect key="frame" x="16" y="93" width="259" height="115"/>
+                    <string key="text">Which of these best
+describe you?</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-py-4Yg">
+                    <rect key="frame" x="0.0" y="16" width="44" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="pfr-yt-e4E"/>
+                    </constraints>
+                    <state key="normal" image="white chevron left"/>
+                    <connections>
+                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="Ftc-yW-bf4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-Wg-M0V">
+                    <rect key="frame" x="295" y="587" width="64" height="64"/>
+                    <state key="normal" image="blue-background white right chvron"/>
+                    <connections>
+                        <action selector="handleCreateAccount:" destination="-1" eventType="touchUpInside" id="ETd-hg-EoN"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-hW-0Nb">
+                    <rect key="frame" x="16" y="224" width="343" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="szP-bX-SDF"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XJw-qZ-r70"/>
+            <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lkV-py-4Yg" firstAttribute="top" secondItem="XJw-qZ-r70" secondAttribute="top" constant="16" id="1GQ-lJ-zJi"/>
+                <constraint firstItem="XJw-qZ-r70" firstAttribute="trailing" secondItem="IVr-hW-0Nb" secondAttribute="trailing" constant="16" id="2VL-lQ-Eqq"/>
+                <constraint firstItem="ms3-Hz-5oL" firstAttribute="top" secondItem="XJw-qZ-r70" secondAttribute="top" constant="93" id="5jw-PU-j8m"/>
+                <constraint firstAttribute="trailing" secondItem="ms3-Hz-5oL" secondAttribute="trailing" constant="100" id="BgM-hO-BPX"/>
+                <constraint firstItem="XJw-qZ-r70" firstAttribute="trailing" secondItem="ovO-Wg-M0V" secondAttribute="trailing" constant="16" id="Brg-QR-U6S"/>
+                <constraint firstItem="IVr-hW-0Nb" firstAttribute="top" secondItem="ms3-Hz-5oL" secondAttribute="bottom" constant="16" id="Ctp-h4-klB"/>
+                <constraint firstItem="IVr-hW-0Nb" firstAttribute="leading" secondItem="XJw-qZ-r70" secondAttribute="leading" constant="16" id="KHw-d9-NFx"/>
+                <constraint firstItem="ms3-Hz-5oL" firstAttribute="leading" secondItem="XJw-qZ-r70" secondAttribute="leading" constant="16" id="aIk-kt-TyB"/>
+                <constraint firstItem="lkV-py-4Yg" firstAttribute="leading" secondItem="XJw-qZ-r70" secondAttribute="leading" id="en5-gM-43A"/>
+                <constraint firstAttribute="bottom" secondItem="ovO-Wg-M0V" secondAttribute="bottom" constant="16" id="pad-qR-cTe"/>
+            </constraints>
+            <point key="canvasLocation" x="22" y="-556"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue-background white right chvron" width="64" height="64"/>
+        <image name="white chevron left" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
