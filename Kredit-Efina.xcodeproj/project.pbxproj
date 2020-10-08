@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D29B2B48B9767991C4FDA9D /* Pods_Kredit_Efina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D431DF62460E443D732966 /* Pods_Kredit_Efina.framework */; };
+		2B229A1B252F55B600D27494 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B229A19252F55B600D27494 /* ChatViewController.swift */; };
+		2B229A1C252F55B600D27494 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B229A1A252F55B600D27494 /* ChatViewController.xib */; };
 		2B65FA1C252BA2C10087D342 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */; };
 		2B65FA20252BA3A30087D342 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA1E252BA3A30087D342 /* ProfileTableViewCell.swift */; };
 		2B65FA21252BA3A30087D342 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA1F252BA3A30087D342 /* ProfileTableViewCell.xib */; };
@@ -29,6 +31,8 @@
 		2BA96378252E4475007BF33E /* FullLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA96377252E4475007BF33E /* FullLoginViewController.swift */; };
 		2BA9637C252E51D9007BF33E /* LoanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9637A252E51D9007BF33E /* LoanDetailsViewController.swift */; };
 		2BA9637D252E51D9007BF33E /* LoanDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9637B252E51D9007BF33E /* LoanDetailsViewController.xib */; };
+		2BA96384252F5321007BF33E /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA96382252F5320007BF33E /* Connectivity.swift */; };
+		2BA96385252F5321007BF33E /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA96383252F5321007BF33E /* ApiUtils.swift */; };
 		2BAD4670252CEAB2006E2507 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD466F252CEAB2006E2507 /* WalletViewController.swift */; };
 		2BAD4674252CEECF006E2507 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */; };
 		2BAD4675252CEECF006E2507 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */; };
@@ -63,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B229A19252F55B600D27494 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2B229A1A252F55B600D27494 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2B65FA1E252BA3A30087D342 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		2B65FA1F252BA3A30087D342 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		2BA96377252E4475007BF33E /* FullLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLoginViewController.swift; sourceTree = "<group>"; };
 		2BA9637A252E51D9007BF33E /* LoanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailsViewController.swift; sourceTree = "<group>"; };
 		2BA9637B252E51D9007BF33E /* LoanDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanDetailsViewController.xib; sourceTree = "<group>"; };
+		2BA96382252F5320007BF33E /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		2BA96383252F5321007BF33E /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		2BAD466F252CEAB2006E2507 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
@@ -138,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				2B997EBB252E1094006C3883 /* CustomClass.swift */,
+				2BA96383252F5321007BF33E /* ApiUtils.swift */,
+				2BA96382252F5320007BF33E /* Connectivity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 				2BF4739F252B2F20000C7009 /* Assets.xcassets */,
 				2BF473A1252B2F20000C7009 /* LaunchScreen.storyboard */,
 				2BF473A4252B2F20000C7009 /* Info.plist */,
+				2B229A19252F55B600D27494 /* ChatViewController.swift */,
+				2B229A1A252F55B600D27494 /* ChatViewController.xib */,
 			);
 			path = "Kredit-Efina";
 			sourceTree = "<group>";
@@ -250,8 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				2BF473F5252B8033000C7009 /* HomeViewController.swift */,
-				2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */,
 				2B65FA32252CC83F0087D342 /* LoanViewController.swift */,
+				2B65FA1B252BA2C10087D342 /* ProfileViewController.swift */,
 				2BAD466F252CEAB2006E2507 /* WalletViewController.swift */,
 			);
 			path = TabBar;
@@ -386,6 +398,7 @@
 				2BF4739E252B2F1D000C7009 /* Main.storyboard in Resources */,
 				2BF473C7252B44FB000C7009 /* DescribeViewController.xib in Resources */,
 				2B65FA21252BA3A30087D342 /* ProfileTableViewCell.xib in Resources */,
+				2B229A1C252F55B600D27494 /* ChatViewController.xib in Resources */,
 				2BAD467A252D0005006E2507 /* SearchLoansViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,9 +454,11 @@
 			files = (
 				2B65FA48252CDEE10087D342 /* ViewDivider.swift in Sources */,
 				2BF473E5252B5700000C7009 /* OTPViewController.swift in Sources */,
+				2BA96384252F5321007BF33E /* Connectivity.swift in Sources */,
 				2BAD4679252D0005006E2507 /* SearchLoansViewController.swift in Sources */,
 				2BA96378252E4475007BF33E /* FullLoginViewController.swift in Sources */,
 				2BF473BB252B3C03000C7009 /* LoginViewController.swift in Sources */,
+				2BA96385252F5321007BF33E /* ApiUtils.swift in Sources */,
 				2BF4740F252B8BC4000C7009 /* TransactionsTableViewCell.swift in Sources */,
 				2B997EB7252E0093006C3883 /* PsychButton.swift in Sources */,
 				2BF473B6252B3A9E000C7009 /* InterfaceBuilderHelper.swift in Sources */,
@@ -471,6 +486,7 @@
 				2B65FA33252CC83F0087D342 /* LoanViewController.swift in Sources */,
 				2BF473F7252B8033000C7009 /* HomeViewController.swift in Sources */,
 				2BF473BF252B3C6D000C7009 /* HelprClass.swift in Sources */,
+				2B229A1B252F55B600D27494 /* ChatViewController.swift in Sources */,
 				2BAD4680252D03C9006E2507 /* AddNewCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PsychomtryViewController" customModule="Kredit_Efina" customModuleProvider="target">
             <connections>
+                <outlet property="btnCalculateCreditScore" destination="g5n-rH-CM5" id="vae-dU-MnI"/>
+                <outlet property="btnRight" destination="FkR-oj-uGH" id="ikK-VK-ERe"/>
                 <outlet property="collPyschometry" destination="N42-J5-9KF" id="m7t-sp-Hbb"/>
                 <outlet property="lblPageNumber" destination="jQ0-xe-jtf" id="tT3-Km-wxZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,6 +26,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkR-oj-uGH">
                     <rect key="frame" x="295" y="587" width="64" height="64"/>
                     <state key="normal" image="blue-background white right chvron"/>
+                    <connections>
+                        <action selector="handleGoRight:" destination="-1" eventType="touchUpInside" id="0bg-PW-Lnj"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ0-xe-jtf">
                     <rect key="frame" x="176.5" y="20" width="22" height="21"/>
@@ -51,6 +56,20 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5n-rH-CM5">
+                    <rect key="frame" x="87.5" y="594" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Dus-H3-qr1"/>
+                        <constraint firstAttribute="width" constant="200" id="sx4-5e-tzN"/>
+                    </constraints>
+                    <state key="normal" title="Calculate Credit Score">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="calculateCreditScore:" destination="-1" eventType="touchUpInside" id="DHB-1c-RXm"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,9 +77,11 @@
                 <constraint firstItem="jQ0-xe-jtf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2hV-90-Heg"/>
                 <constraint firstItem="TEz-K6-MNw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Xk-fP-lrE"/>
                 <constraint firstItem="jQ0-xe-jtf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="B3x-BD-U9W"/>
+                <constraint firstItem="g5n-rH-CM5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EMV-iF-Ape"/>
                 <constraint firstItem="FkR-oj-uGH" firstAttribute="top" secondItem="N42-J5-9KF" secondAttribute="bottom" constant="16" id="MJo-ic-5TX"/>
                 <constraint firstItem="TEz-K6-MNw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Prw-0i-Q4X"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FkR-oj-uGH" secondAttribute="bottom" constant="16" id="Vcz-93-can"/>
+                <constraint firstItem="g5n-rH-CM5" firstAttribute="centerY" secondItem="FkR-oj-uGH" secondAttribute="centerY" id="eIB-jc-Ndn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FkR-oj-uGH" secondAttribute="trailing" constant="16" id="nyk-qa-g7m"/>
                 <constraint firstItem="N42-J5-9KF" firstAttribute="top" secondItem="jQ0-xe-jtf" secondAttribute="bottom" constant="40" id="pnK-6a-WPU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N42-J5-9KF" secondAttribute="trailing" constant="16" id="qHt-h4-H3g"/>

@@ -66,6 +66,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func handleLogin(_ sender: Any) {
+        HUD.show(.progress)
         if txtPassword.text!.isEmpty{
             HUD.flash(.label("Please enter your password"),delay: 1)
             return
@@ -76,7 +77,6 @@ class LoginViewController: UIViewController {
         }
         
         
-        HUD.show(.progress)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabBar = storyboard.instantiateViewController(withIdentifier: "Kredit-Tabbar")
         

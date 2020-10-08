@@ -10,6 +10,8 @@ import PKHUD
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var lblcreidtSubTitle: UILabel!
+    @IBOutlet weak var lblCreditScore: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var blueCurvedView: UIView!
     @IBOutlet weak var creditScoreCardView: UIView!
@@ -26,6 +28,28 @@ class HomeViewController: UIViewController {
         configureCollLoans()
         configureIfLender()
         collectionPageControl.numberOfPages = 5
+        
+    }
+    
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        configureCrediTScoreView()
+
+    }
+    
+    func configureCrediTScoreView(){
+        if HelperClass.currentUser!.usertype == .Borrower{
+            lblcreidtSubTitle.text = "My Credit Score"
+            if HelperClass.currentUser?.creditScore == nil{
+                lblCreditScore.text = "Take Credit Score Test! 🚀"
+            }
+        }else{
+            lblcreidtSubTitle.text = "Total Intrest Receieved 💰"
+            lblCreditScore.text = "Make an Offer"
+            
+        }
+        
     }
     
     fileprivate func configureIfLender(){
@@ -62,9 +86,20 @@ class HomeViewController: UIViewController {
 
     @IBAction func goToCreditScore(_ sender: Any) {
         print("k")
+        if HelperClass.currentUser!.usertype == .Lender{
+            return
+        }
+        if let myCreditInt = HelperClass.currentUser?.creditScore{
+            lblCreditScore.text = "\(myCreditInt)"
+            
+        }
+        
         let creditVc = CreditScoreViewController(nibName:"CreditScoreViewController", bundle:nil)
         self.navigationController?.pushViewController(creditVc, animated: true)
+        
+        
     }
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{

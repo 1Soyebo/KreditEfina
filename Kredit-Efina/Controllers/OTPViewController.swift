@@ -7,6 +7,7 @@
 
 import UIKit
 import SVPinView
+import PKHUD
 
 class OTPViewController: UIViewController {
 
@@ -40,11 +41,27 @@ class OTPViewController: UIViewController {
     }
     
     @IBAction func handleVerifyAndContinue(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBar = storyboard.instantiateViewController(withIdentifier: "Kredit-Tabbar")
         
-        self.navigationController?.pushViewController(tabBar, animated: true)
+        let hmm = otpView.getPin()
+        if hmm.count != 4{
+            HUD.flash(.label("Fill All Fields 🙏🏽"),delay: 1)
+            return
+        }
+        
+        if hmm != "0000" {
+            HUD.flash(.label("Wrong OTP 🚫"),delay: 1)
+        }else{
+            let createTempUSer = UserCredentials(username: "userTEMP", password: "0000", usertype: HelperClass.signUUSer ?? .Borrower)
+            HelperClass.currentUser = createTempUSer
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tabBar = storyboard.instantiateViewController(withIdentifier: "Kredit-Tabbar")
+            
+            self.navigationController?.pushViewController(tabBar, animated: true)
+        }
+        
+        
     }
     
 
+    
 }

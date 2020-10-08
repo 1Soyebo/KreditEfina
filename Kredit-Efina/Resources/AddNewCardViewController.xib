@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,6 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewCardViewController" customModule="Kredit_Efina" customModuleProvider="target">
             <connections>
                 <outlet property="btnAddCard" destination="5WD-c4-JLC" id="khh-iw-1OR"/>
+                <outlet property="txtCardNumber" destination="4eX-VH-77d" id="9Gi-zL-Oa2"/>
+                <outlet property="txtCvv" destination="fJw-26-fJR" id="MQx-o1-DXj"/>
+                <outlet property="txtExpiry" destination="ggy-jt-GBw" id="RKC-y1-fJ2"/>
+                <outlet property="txtPin" destination="jhv-05-yMP" id="YNk-1U-n1W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,7 +48,7 @@
                                         <constraint firstAttribute="height" constant="50" id="YP7-7c-b9e"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
                             </subviews>
                         </stackView>
@@ -65,7 +70,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="wY8-oh-840"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -84,7 +89,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="ljb-5n-0sb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -103,7 +108,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="xyh-ec-muc"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -120,6 +125,9 @@
                     <state key="normal" title="ADD CARD">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="handleAddCard:" destination="-1" eventType="touchUpInside" id="ezH-gf-alZ"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

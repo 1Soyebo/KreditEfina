@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PKHUD
 
 struct DescribeOptions {
     let title:String
@@ -41,6 +42,11 @@ class DescribeViewController: UIViewController {
     }
     
     @IBAction func handleCreateAccount(_ sender: Any) {
+        if selectedIndes == nil{
+            HUD.flash(.label("Please select a user-type 🙏🏽"),delay: 1.5)
+            return
+        }
+        print(selectedIndes!)
         let createAccount = CreateAccountViewController(nibName: "CreateAccountViewController", bundle: nil)
         self.navigationController?.pushViewController(createAccount, animated: true)
     }
@@ -76,7 +82,7 @@ extension DescribeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tblDescribe.deselectRow(at: indexPath, animated: true)
         selectedIndes = indexPath.row
-
+        HelperClass.signUUSer = (selectedIndes == 0) ? .Lender:.Borrower
         tblDescribe.reloadData()
     }
     

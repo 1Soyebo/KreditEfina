@@ -9,6 +9,9 @@ import UIKit
 
 class LoanTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblTypeOfLoan: UILabel!
+    @IBOutlet weak var lblSummary: UILabel!
+    @IBOutlet weak var lblDuration: UILabel!
     static let identifier = "LoanTableViewCell"
     @IBOutlet weak var mainView: UIView!
     override func awakeFromNib() {

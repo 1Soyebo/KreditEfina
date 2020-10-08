@@ -13,6 +13,10 @@
             <connections>
                 <outlet property="btnSearch" destination="Rhr-sI-YDg" id="wvF-0X-9rK"/>
                 <outlet property="lblTitle" destination="OJd-73-PHs" id="cxm-21-9u4"/>
+                <outlet property="txtAmount" destination="Uts-bB-USi" id="SXj-HD-ZrV"/>
+                <outlet property="txtInterestRate" destination="Kco-87-dq8" id="AYw-fO-2CC"/>
+                <outlet property="txtPaybackTime" destination="zXx-IE-Px4" id="QE6-cz-Ks6"/>
+                <outlet property="txtPurposeLoan" destination="nzM-Zp-n1e" id="8Cf-8N-Kdr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewLoanAmount" destination="cCU-gc-4lB" id="bag-k6-F0Z"/>
                 <outlet property="viewMinimumPaybacktime" destination="yKj-iH-8KC" id="T6b-PL-DaV"/>
@@ -77,7 +81,7 @@
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-bB-USi">
                                             <rect key="frame" x="0.0" y="24" width="327" height="31.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -154,9 +158,13 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="LTa-dw-TBk"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Search">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="handleSearch" destination="-1" eventType="touchUpInside" id="XA0-39-Zvk"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

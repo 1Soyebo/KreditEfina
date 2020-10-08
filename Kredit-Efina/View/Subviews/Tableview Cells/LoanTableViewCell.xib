@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAd-5c-RJR">
-                        <rect key="frame" x="0.0" y="26" width="320" height="106"/>
+                        <rect key="frame" x="0.0" y="13" width="320" height="106"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-play" translatesAutoresizingMaskIntoConstraints="NO" id="hSv-Q2-AOS">
                                 <rect key="frame" x="16" y="21" width="16" height="16"/>
@@ -66,14 +66,17 @@
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="yAd-5c-RJR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3ZF-hW-xWo"/>
                     <constraint firstItem="yAd-5c-RJR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8h7-LD-qg5"/>
-                    <constraint firstAttribute="bottom" secondItem="yAd-5c-RJR" secondAttribute="bottom" id="mNn-Iq-c5G"/>
                     <constraint firstAttribute="trailing" secondItem="yAd-5c-RJR" secondAttribute="trailing" id="uni-yI-m1U"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="lblDuration" destination="7rH-Hs-2ZG" id="0Nu-kS-hSf"/>
+                <outlet property="lblSummary" destination="BKW-gD-A7L" id="5tN-hr-Y78"/>
+                <outlet property="lblTypeOfLoan" destination="R6m-Vv-N9Z" id="ids-vk-b2h"/>
                 <outlet property="mainView" destination="yAd-5c-RJR" id="aWw-UH-lTz"/>
             </connections>
             <point key="canvasLocation" x="18.840579710144929" y="75"/>

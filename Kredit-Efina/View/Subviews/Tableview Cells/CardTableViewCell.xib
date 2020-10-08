@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -53,7 +54,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPU-92-d2J">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard_logo" translatesAutoresizingMaskIntoConstraints="NO" id="mPU-92-d2J">
                                 <rect key="frame" x="273" y="16" width="31" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="O03-Tv-8zw"/>
@@ -83,9 +84,14 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="lblCardNumber" destination="BUb-Ut-qS7" id="rWZ-lc-sxu"/>
+                <outlet property="lblDate" destination="1OI-zH-7a9" id="0Yv-ht-VMT"/>
                 <outlet property="viewCreditCard" destination="afQ-Sy-THo" id="rXA-aF-NJM"/>
             </connections>
-            <point key="canvasLocation" x="114" y="93"/>
+            <point key="canvasLocation" x="113.04347826086958" y="92.410714285714278"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="mastercard_logo" width="49.5" height="36"/>
+    </resources>
 </document>

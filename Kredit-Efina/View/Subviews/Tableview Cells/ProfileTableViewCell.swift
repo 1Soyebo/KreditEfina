@@ -11,6 +11,7 @@ class ProfileTableViewCell: UITableViewCell {
 
     static let identifier = "ProfileTableViewCell"
     @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var imgMain: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kredit_Efina" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="landingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Kredit_Efina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q3t-u0-Lzp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
                                 <rect key="frame" x="16" y="57" width="343" height="561"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-Fh-HFm">
-                                        <rect key="frame" x="16" y="321.5" width="311" height="239.5"/>
+                                        <rect key="frame" x="16" y="335.5" width="311" height="225.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koX-gS-Lns">
@@ -191,7 +191,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="drh-ji-tXp">
-                                        <rect key="frame" x="16" y="37" width="311" height="239.5"/>
+                                        <rect key="frame" x="16" y="51" width="311" height="225.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Offers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSf-TU-NVV">
@@ -200,23 +200,43 @@
                                         <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeR-Ex-JfB" customClass="ViewDivider" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="37" width="311" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="qb8-ZS-W0u"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wz-2l-Nwi" customClass="ViewDivider" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="321.5" width="311" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="DOo-Mu-gxK"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eeR-Ex-JfB" secondAttribute="trailing" constant="16" id="5jY-dQ-t9U"/>
+                                    <constraint firstItem="2Wz-2l-Nwi" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="5tw-Ay-b9f"/>
                                     <constraint firstAttribute="trailing" secondItem="PSf-TU-NVV" secondAttribute="trailing" constant="16" id="7da-Nf-cFh"/>
                                     <constraint firstAttribute="trailing" secondItem="i6L-Fh-HFm" secondAttribute="trailing" constant="16" id="85m-Iu-hV2"/>
                                     <constraint firstItem="koX-gS-Lns" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="8gR-nu-4au"/>
                                     <constraint firstAttribute="trailing" secondItem="koX-gS-Lns" secondAttribute="trailing" constant="16" id="CHv-tA-ZGx"/>
+                                    <constraint firstItem="i6L-Fh-HFm" firstAttribute="top" secondItem="2Wz-2l-Nwi" secondAttribute="bottom" constant="12" id="GL2-5Z-6re"/>
+                                    <constraint firstItem="drh-ji-tXp" firstAttribute="top" secondItem="eeR-Ex-JfB" secondAttribute="bottom" constant="12" id="LaJ-dI-hxi"/>
                                     <constraint firstAttribute="trailing" secondItem="drh-ji-tXp" secondAttribute="trailing" constant="16" id="Qzc-br-9gW"/>
                                     <constraint firstItem="drh-ji-tXp" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="YGp-Cf-3Tu"/>
                                     <constraint firstItem="i6L-Fh-HFm" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="aVI-ev-W8a"/>
-                                    <constraint firstItem="i6L-Fh-HFm" firstAttribute="top" secondItem="koX-gS-Lns" secondAttribute="bottom" constant="8" symbolic="YES" id="bOO-rb-FzI"/>
                                     <constraint firstAttribute="bottom" secondItem="i6L-Fh-HFm" secondAttribute="bottom" id="cTQ-9P-GuU"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Wz-2l-Nwi" secondAttribute="trailing" constant="16" id="cVI-Ay-am3"/>
                                     <constraint firstItem="koX-gS-Lns" firstAttribute="top" secondItem="drh-ji-tXp" secondAttribute="bottom" constant="16" id="gKH-7W-uqI"/>
                                     <constraint firstItem="drh-ji-tXp" firstAttribute="height" secondItem="i6L-Fh-HFm" secondAttribute="height" id="kly-RT-VSD"/>
                                     <constraint firstItem="PSf-TU-NVV" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="p2N-eX-UTB"/>
                                     <constraint firstItem="PSf-TU-NVV" firstAttribute="top" secondItem="iIQ-d6-ocp" secondAttribute="top" constant="8" id="uQ3-bf-cZv"/>
-                                    <constraint firstItem="drh-ji-tXp" firstAttribute="top" secondItem="PSf-TU-NVV" secondAttribute="bottom" constant="8" symbolic="YES" id="yVd-rT-44F"/>
+                                    <constraint firstItem="2Wz-2l-Nwi" firstAttribute="top" secondItem="koX-gS-Lns" secondAttribute="bottom" constant="8" id="uX8-cq-Vlz"/>
+                                    <constraint firstItem="eeR-Ex-JfB" firstAttribute="top" secondItem="PSf-TU-NVV" secondAttribute="bottom" constant="8" id="vz1-Tl-VpU"/>
+                                    <constraint firstItem="eeR-Ex-JfB" firstAttribute="leading" secondItem="iIQ-d6-ocp" secondAttribute="leading" constant="16" id="yXo-pE-uKi"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIE-zk-4xk">
@@ -255,7 +275,9 @@
                     <navigationItem key="navigationItem" id="HUY-OY-4Ee"/>
                     <connections>
                         <outlet property="btnAddLaon" destination="bIE-zk-4xk" id="8Hi-yT-lBT"/>
+                        <outlet property="lblOne" destination="PSf-TU-NVV" id="hKx-hy-E2J"/>
                         <outlet property="lblTitle" destination="oHY-br-0v9" id="CFr-Ps-MzY"/>
+                        <outlet property="lblTwo" destination="koX-gS-Lns" id="Og0-SN-lEv"/>
                         <outlet property="tblLoanOffers" destination="drh-ji-tXp" id="E3J-Mt-qww"/>
                         <outlet property="tblLoans" destination="i6L-Fh-HFm" id="ClE-Qx-zAY"/>
                     </connections>
@@ -373,25 +395,18 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-Fa-hqN">
-                                <rect key="frame" x="16" y="425.5" width="343" height="176.5"/>
+                                <rect key="frame" x="16" y="416" width="343" height="186"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-Ky-Ny0">
-                                <rect key="frame" x="16" y="387.5" width="343" height="30"/>
+                                <rect key="frame" x="16" y="387.5" width="343" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEX-qH-52w">
-                                        <rect key="frame" x="0.0" y="0.0" width="297" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR0-Tg-sRV">
-                                        <rect key="frame" x="297" y="0.0" width="46" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="2fd-Ak-KaT"/>
-                                        </constraints>
-                                        <state key="normal" title="See all"/>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-EL-ex1">
@@ -428,7 +443,9 @@
                         <outlet property="collectionPageControl" destination="Iph-EL-ex1" id="Xwm-ft-UAQ"/>
                         <outlet property="creditScoreCardView" destination="vOf-it-loC" id="wgK-qx-uyh"/>
                         <outlet property="imgUser" destination="DRW-eZ-8vK" id="M3P-YX-n2U"/>
+                        <outlet property="lblCreditScore" destination="Dct-tL-nG0" id="HvX-eK-4mc"/>
                         <outlet property="lblTitle" destination="vdf-hO-JHY" id="nDS-J5-r8M"/>
+                        <outlet property="lblcreidtSubTitle" destination="FgT-Ke-Obf" id="OrO-iQ-iOg"/>
                         <outlet property="tblTransactions" destination="mHn-Fa-hqN" id="Wc8-GM-AMf"/>
                     </connections>
                 </viewController>

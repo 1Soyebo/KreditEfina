@@ -62,7 +62,7 @@ class CreditScoreTestViewController: UIViewController {
         setupMaritalStatus()
         setupNumber()
         setupLengthBusiness()
-        
+        setupTypeOFBusiness()
         setupRecharge()
         
     }
@@ -72,7 +72,7 @@ class CreditScoreTestViewController: UIViewController {
     }
     
     @IBAction func goToPsycoTest(_ sender: Any) {
-        if(txtStateOrigin.text!.isEmpty || txtDateOfBIrth.text!.isEmpty || txtPhoneNumber.text!.isEmpty || txtMaritalStatus.text!.isEmpty || txtLocation.text!.isEmpty || txtTypeOfBusiness.text!.isEmpty || txtNoOfDependents.text!.isEmpty || txtBills.text!.isEmpty || txtNoCreditLoansTaken.text!.isEmpty || txtFrequentRecharge.text!.isEmpty || txtYearsBusiness.text!.isEmpty || txtCooperative.text!.isEmpty || txtFullname.text!.isEmpty || txtGurantorsPhoneNumber.text!.isEmpty || txtGuarantosPhone.text!.isEmpty){
+        if (txtStateOrigin.text!.isEmpty || txtDateOfBIrth.text!.isEmpty || txtPhoneNumber.text!.isEmpty || txtMaritalStatus.text!.isEmpty || txtLocation.text!.isEmpty || txtTypeOfBusiness.text!.isEmpty || txtNoOfDependents.text!.isEmpty || txtBills.text!.isEmpty || txtNoCreditLoansTaken.text!.isEmpty || txtFrequentRecharge.text!.isEmpty || txtYearsBusiness.text!.isEmpty || txtCooperative.text!.isEmpty || txtFullname.text!.isEmpty || txtGurantorsPhoneNumber.text!.isEmpty || txtGuarantosPhone.text!.isEmpty){
             HUD.flash(.label("Fill All Fields 🙏🏽"),delay: 1)
             return
         }

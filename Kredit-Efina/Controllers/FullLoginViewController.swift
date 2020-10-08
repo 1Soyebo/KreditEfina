@@ -80,7 +80,7 @@ class FullLoginViewController: UIViewController {
     
     
     @IBAction func handleLogin(_ sender: Any) {
-        
+        HUD.show(.progress)
         if txtPassword.text!.isEmpty || txtUsername.text!.isEmpty{
             HUD.flash(.label("Please enter your password"),delay: 1)
             return

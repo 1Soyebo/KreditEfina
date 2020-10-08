@@ -11,6 +11,10 @@ class CardTableViewCell: UITableViewCell {
 
     static let identifier = "CardTableViewCell"
     @IBOutlet weak var viewCreditCard: UIView!
+    @IBOutlet weak var lblCardNumber: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         viewCreditCard.layer.cornerRadius = 20

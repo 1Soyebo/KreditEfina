@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditScoreViewController" customModule="Kredit_Efina" customModuleProvider="target">
             <connections>
-                <outlet property="btnPsychTest" destination="Rh7-sl-29q" id="cGk-CA-4z5"/>
+                <outlet property="lblCreditNumber" destination="dl8-zV-9hQ" id="hWX-gm-G3d"/>
+                <outlet property="lblVerdict" destination="eCG-Z1-q35" id="qcS-jM-wTd"/>
+                <outlet property="progressBArView" destination="8y9-yq-ds5" id="YR9-ua-RH2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewMain" destination="cDe-1y-wpe" id="PaN-6V-3TA"/>
             </connections>
@@ -86,6 +88,7 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="2a7-PY-cCc"/>
                         <constraint firstItem="ykl-iR-LQd" firstAttribute="leading" secondItem="rCj-7g-mg4" secondAttribute="trailing" constant="16" id="2w5-2b-A58"/>
@@ -103,21 +106,10 @@
                         <constraint firstItem="3q9-6H-tF7" firstAttribute="top" secondItem="1HU-cK-7Pg" secondAttribute="bottom" constant="8" id="z0r-wJ-Cyy"/>
                         <constraint firstItem="rCj-7g-mg4" firstAttribute="centerY" secondItem="ykl-iR-LQd" secondAttribute="centerY" id="z3i-I1-BzZ"/>
                     </constraints>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-sl-29q">
-                    <rect key="frame" x="16" y="331" width="343" height="50"/>
-                    <color key="backgroundColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="anV-0H-Zuq"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="Take Psychometry Test">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
                     <connections>
-                        <action selector="goToPsychTest:" destination="-1" eventType="touchUpInside" id="ssy-Pi-vrn"/>
+                        <outletCollection property="gestureRecognizers" destination="T7R-AY-43k" appends="YES" id="ZLI-rn-QJW"/>
                     </connections>
-                </button>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-Aq-4OS">
                     <rect key="frame" x="0.0" y="20" width="44" height="24"/>
                     <constraints>
@@ -133,10 +125,7 @@
             <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="hcM-uW-DOU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5iE-Jw-jdZ"/>
-                <constraint firstItem="Rh7-sl-29q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6va-O6-ami"/>
-                <constraint firstItem="Rh7-sl-29q" firstAttribute="top" secondItem="cDe-1y-wpe" secondAttribute="bottom" constant="16" id="FYy-kj-PzC"/>
                 <constraint firstItem="hcM-uW-DOU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LtV-8i-4dJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rh7-sl-29q" secondAttribute="trailing" constant="16" id="Rc2-eR-7tx"/>
                 <constraint firstItem="5h0-Aq-4OS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UU5-Zj-BUp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cDe-1y-wpe" secondAttribute="trailing" constant="16" id="bkt-5C-Ndg"/>
                 <constraint firstItem="cDe-1y-wpe" firstAttribute="top" secondItem="hcM-uW-DOU" secondAttribute="bottom" constant="16" id="vIW-9n-JGI"/>
@@ -145,6 +134,11 @@
             </constraints>
             <point key="canvasLocation" x="-138.40000000000001" y="92.203898050974516"/>
         </view>
+        <tapGestureRecognizer id="T7R-AY-43k">
+            <connections>
+                <action selector="goToPsychTest:" destination="-1" id="68D-PM-NOz"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="blue left chevron" width="24" height="24"/>
