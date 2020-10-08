@@ -17,7 +17,7 @@ class LoanTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         mainView.layer.borderWidth = 1
-        mainView.layer.borderColor = Constants.kreditlightGrey.withAlphaComponent(0.125).cgColor
+        mainView.layer.borderColor = Constants.kreditlightGrey.withAlphaComponent(0.35).cgColor
         mainView.layer.cornerRadius = 5
         self.selectionStyle = .none
         // Initialization code

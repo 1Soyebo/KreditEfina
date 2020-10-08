@@ -109,7 +109,7 @@ extension LoanViewController: UITableViewDelegate, UITableViewDataSource{
         if tableView.tag == 1{
             if HelperClass.currentUser?.loanRequested == nil{
                 let cell = tblLoans.dequeueReusableCell(withIdentifier: "cell")
-                cell?.textLabel?.text = "Create a Loan in the \("+") button 🥺"
+                cell?.textLabel?.text = "Create a Loan with the \("+") button 🥺"
                 return cell!
             }
         }
@@ -119,9 +119,9 @@ extension LoanViewController: UITableViewDelegate, UITableViewDataSource{
             let loanOfferTVC = tblLoans.dequeueReusableCell(withIdentifier: LoanTableViewCell.identifier, for: indexPath) as! LoanTableViewCell
             
             if let hmm = HelperClass.currentUser?.loanRequested{
-                loanTVC.lblSummary.text = hmm[indexPath.row].summary
-                loanTVC.lblDuration.text = hmm[indexPath.row].duration
-                loanTVC.lblTypeOfLoan.text = hmm[indexPath.row].loanType
+                loanOfferTVC.lblSummary.text = hmm[indexPath.row].summary
+                loanOfferTVC.lblDuration.text = hmm[indexPath.row].duration
+                loanOfferTVC.lblTypeOfLoan.text = hmm[indexPath.row].loanType
             }
             
             return loanOfferTVC

@@ -27,7 +27,6 @@ class AddNewCardViewController: UIViewController {
         HUD.show(.progress)
         if !(txtCardNumber.text!.isEmpty || txtCvv.text!.isEmpty || txtPin.text!.isEmpty || txtExpiry.text!.isEmpty){
             let singleCard = CardDetails(cardNumer: txtCardNumber.text!, CVV: txtCvv.text!, pin: txtPin.text!, dateOFExpiry: txtExpiry.text!)
-            HelperClass.currentUser?.userCardDets?.append(singleCard)
             if (HelperClass.currentUser?.userCardDets?.append(singleCard)) == nil {
                 HelperClass.currentUser?.userCardDets = [singleCard]
             }

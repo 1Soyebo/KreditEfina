@@ -43,7 +43,7 @@ class LoanDetailsViewController: UIViewController {
         configureLoanDEtails()
         if HelperClass.currentUser!.usertype == .Borrower{
             btnDecline.isHidden = true
-            btnApprove.setTitle("Message Lender 🚀", for: .normal)
+            btnApprove.setTitle("Apply for Loan 🚀", for: .normal)
         }
     }
 
@@ -83,8 +83,8 @@ class LoanDetailsViewController: UIViewController {
     
     @IBAction func handleApproveLoan(_ sender: Any) {
         
-        if btnApprove.titleLabel?.text == "Message Lender 🚀"{
-            
+        if btnApprove.titleLabel?.text == "Apply for Loan 🚀"{
+            HUD.flash(.label("Your request has been sent to \(subTitle)"))
         }else{
             if HelperClass.currentUser?.userCardDets == nil{
                 HUD.flash(.label("Please Add a Card 🙏🏽"),delay: 1)
@@ -138,7 +138,7 @@ class LoanDetailsViewController: UIViewController {
                         }
                         return
                     }
-                    HUD.flash(.label("💸 Loan has been Apporoved by you 💸"),delay: 2)
+                    HUD.flash(.label("💸 A Loan of \(self.amount) has been Apporoved by you 💸"),delay: 2)
                     self.dismiss(animated: true, completion: nil)
                     
                 case .failure(let error):
