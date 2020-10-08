@@ -10,17 +10,23 @@ import UIKit
 class CreditScoreViewController: UIViewController {
 
     @IBOutlet weak var btnPsychTest: UIButton!
+    @IBOutlet weak var viewMain: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        HelperClass.curveUiElements(views: btnPsychTest)
+        HelperClass.curveUiElements(views: btnPsychTest,viewMain)
         // Do any additional setup after loading the view.
     }
 
 
     
     @IBAction func goToPsychTest(_ sender: Any) {
-        let psychVc = PyschometryTestViewController(nibName: "PyschometryTestViewController", bundle: nil)
-        self.navigationController?.pushViewController(psychVc, animated: true)
+        let creditTestVc = CreditScoreTestViewController(nibName: "CreditScoreTestViewController", bundle: nil)
+        self.navigationController?.pushViewController(creditTestVc, animated: true)
+    }
+    
+    
+    @IBAction func handleBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

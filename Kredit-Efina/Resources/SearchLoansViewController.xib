@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchLoansViewController" customModule="Kredit_Efina" customModuleProvider="target">
             <connections>
                 <outlet property="btnSearch" destination="Rhr-sI-YDg" id="wvF-0X-9rK"/>
+                <outlet property="lblTitle" destination="OJd-73-PHs" id="cxm-21-9u4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewLoanAmount" destination="cCU-gc-4lB" id="bag-k6-F0Z"/>
                 <outlet property="viewMinimumPaybacktime" destination="yKj-iH-8KC" id="T6b-PL-DaV"/>

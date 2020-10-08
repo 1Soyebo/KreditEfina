@@ -8,6 +8,7 @@
 import UIKit
 
 class  HelperClass {
+    static var currentUser:UserCredentials? = Constants.arrayUsers[0]
     static func curveUiElements(views:UIView...){
         for singleView in views{
             singleView.layer.cornerRadius = 5

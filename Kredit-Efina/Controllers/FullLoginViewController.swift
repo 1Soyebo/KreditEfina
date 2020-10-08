@@ -1,16 +1,17 @@
 //
-//  LoginViewController.swift
+//  FullLoginViewController.swift
 //  Kredit-Efina
 //
-//  Created by Ibukunoluwa Soyebo on 05/10/2020.
+//  Created by Ibukunoluwa Soyebo on 07/10/2020.
 //
 
 import UIKit
 import PKHUD
 
-class LoginViewController: UIViewController {
+class FullLoginViewController: UIViewController {
 
     @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var lblWelcome: UILabel!
@@ -20,9 +21,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        HelperClass.curveUiElements(views: txtPassword,btnLogin)
+        HelperClass.curveUiElements(views: txtPassword,btnLogin,txtUsername)
         txtPassword.isSecureTextEntry = true
         configurePasswordtxt()
+        configureEmailtxt()
         // Do any additional setup after loading the view.
     }
     
@@ -32,10 +34,10 @@ class LoginViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        lblWelcome.text = "Welcome Back, \(HelperClass.currentUser?.username ?? "")"
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        lblWelcome.text = "Welcome Back, \(HelperClass.currentUser?.username ?? "")"
+//    }
     
     fileprivate func configurePasswordtxt(){
         let plainView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -46,6 +48,18 @@ class LoginViewController: UIViewController {
         txtPassword.leftViewMode = .always
         
     }
+    
+    fileprivate func configureEmailtxt(){
+        let plainView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let keyimage = UIImageView(image: UIImage(named: "email logo"))
+        plainView.addSubview(keyimage)
+        keyimage.frame = CGRect(x: 10, y: 10, width: 20, height: 20)
+        txtUsername.leftView = plainView
+        txtUsername.leftViewMode = .always
+        
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -66,31 +80,31 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func handleLogin(_ sender: Any) {
-        if txtPassword.text!.isEmpty{
+        
+        if txtPassword.text!.isEmpty || txtUsername.text!.isEmpty{
             HUD.flash(.label("Please enter your password"),delay: 1)
             return
+        }else{
+            txtUsername.text = txtUsername!.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            txtPassword.text = txtPassword!.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         }
-        if HelperClass.currentUser?.password != txtPassword.text!{
-            HUD.flash(.label("Password is incorrect, try again 🥺"),delay: 1)
-            return
+        
+        if let elemnt = Constants.arrayUsers.first(where: {$0.username == txtUsername.text!}){
+            if elemnt.password != txtPassword.text!{
+                HUD.flash(.label("Password is incorrect, try again 🥺"),delay: 1)
+            }else{
+                HelperClass.currentUser = elemnt
+                HUD.show(.progress)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let tabBar = storyboard.instantiateViewController(withIdentifier: "Kredit-Tabbar")
+                self.navigationController?.pushViewController(tabBar, animated: true)
+            }
+        }else{
+            HUD.flash(.label("User does not exist 😔"),delay: 1)
         }
         
         
-        HUD.show(.progress)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBar = storyboard.instantiateViewController(withIdentifier: "Kredit-Tabbar")
-        
-        self.navigationController?.pushViewController(tabBar, animated: true)
         //HUD.hide()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

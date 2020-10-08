@@ -16,10 +16,19 @@
 		2B65FA33252CC83F0087D342 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA32252CC83F0087D342 /* LoanViewController.swift */; };
 		2B65FA37252CD6460087D342 /* CreditScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */; };
 		2B65FA38252CD6460087D342 /* CreditScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */; };
-		2B65FA3D252CDA8D0087D342 /* PyschometryTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */; };
-		2B65FA3E252CDA8D0087D342 /* PyschometryTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */; };
+		2B65FA3D252CDA8D0087D342 /* CreditScoreTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA3B252CDA8D0087D342 /* CreditScoreTestViewController.swift */; };
+		2B65FA3E252CDA8D0087D342 /* CreditScoreTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B65FA3C252CDA8D0087D342 /* CreditScoreTestViewController.xib */; };
 		2B65FA48252CDEE10087D342 /* ViewDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA47252CDEE10087D342 /* ViewDivider.swift */; };
-		2B65FA4B252CE04F0087D342 /* PsychTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA4A252CE04F0087D342 /* PsychTextField.swift */; };
+		2B65FA4B252CE04F0087D342 /* Textfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B65FA4A252CE04F0087D342 /* Textfields.swift */; };
+		2B997EAD252DF774006C3883 /* PsychomtryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B997EAB252DF774006C3883 /* PsychomtryViewController.swift */; };
+		2B997EAE252DF774006C3883 /* PsychomtryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B997EAC252DF774006C3883 /* PsychomtryViewController.xib */; };
+		2B997EB3252DF8A1006C3883 /* PsychoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B997EB1252DF8A1006C3883 /* PsychoCollectionViewCell.swift */; };
+		2B997EB4252DF8A1006C3883 /* PsychoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B997EB2252DF8A1006C3883 /* PsychoCollectionViewCell.xib */; };
+		2B997EB7252E0093006C3883 /* PsychButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B997EB6252E0093006C3883 /* PsychButton.swift */; };
+		2B997EBC252E1094006C3883 /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B997EBB252E1094006C3883 /* CustomClass.swift */; };
+		2BA96378252E4475007BF33E /* FullLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA96377252E4475007BF33E /* FullLoginViewController.swift */; };
+		2BA9637C252E51D9007BF33E /* LoanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9637A252E51D9007BF33E /* LoanDetailsViewController.swift */; };
+		2BA9637D252E51D9007BF33E /* LoanDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9637B252E51D9007BF33E /* LoanDetailsViewController.xib */; };
 		2BAD4670252CEAB2006E2507 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD466F252CEAB2006E2507 /* WalletViewController.swift */; };
 		2BAD4674252CEECF006E2507 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */; };
 		2BAD4675252CEECF006E2507 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */; };
@@ -62,10 +71,19 @@
 		2B65FA32252CC83F0087D342 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreViewController.swift; sourceTree = "<group>"; };
 		2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreViewController.xib; sourceTree = "<group>"; };
-		2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyschometryTestViewController.swift; sourceTree = "<group>"; };
-		2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PyschometryTestViewController.xib; sourceTree = "<group>"; };
+		2B65FA3B252CDA8D0087D342 /* CreditScoreTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreTestViewController.swift; sourceTree = "<group>"; };
+		2B65FA3C252CDA8D0087D342 /* CreditScoreTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreTestViewController.xib; sourceTree = "<group>"; };
 		2B65FA47252CDEE10087D342 /* ViewDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDivider.swift; sourceTree = "<group>"; };
-		2B65FA4A252CE04F0087D342 /* PsychTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychTextField.swift; sourceTree = "<group>"; };
+		2B65FA4A252CE04F0087D342 /* Textfields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfields.swift; sourceTree = "<group>"; };
+		2B997EAB252DF774006C3883 /* PsychomtryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychomtryViewController.swift; sourceTree = "<group>"; };
+		2B997EAC252DF774006C3883 /* PsychomtryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PsychomtryViewController.xib; sourceTree = "<group>"; };
+		2B997EB1252DF8A1006C3883 /* PsychoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B997EB2252DF8A1006C3883 /* PsychoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PsychoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2B997EB6252E0093006C3883 /* PsychButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychButton.swift; sourceTree = "<group>"; };
+		2B997EBB252E1094006C3883 /* CustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
+		2BA96377252E4475007BF33E /* FullLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLoginViewController.swift; sourceTree = "<group>"; };
+		2BA9637A252E51D9007BF33E /* LoanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailsViewController.swift; sourceTree = "<group>"; };
+		2BA9637B252E51D9007BF33E /* LoanDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanDetailsViewController.xib; sourceTree = "<group>"; };
 		2BAD466F252CEAB2006E2507 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		2BAD4672252CEECF006E2507 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		2BAD4673252CEECF006E2507 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
@@ -119,6 +137,7 @@
 		2B65FA23252C53920087D342 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B997EBB252E1094006C3883 /* CustomClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,7 +147,8 @@
 			children = (
 				2BF473D0252B469D000C7009 /* Subviews */,
 				2B65FA47252CDEE10087D342 /* ViewDivider.swift */,
-				2B65FA4A252CE04F0087D342 /* PsychTextField.swift */,
+				2B65FA4A252CE04F0087D342 /* Textfields.swift */,
+				2B997EB6252E0093006C3883 /* PsychButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,9 +201,11 @@
 		2BF473B9252B3BE5000C7009 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2BA9637A252E51D9007BF33E /* LoanDetailsViewController.swift */,
+				2B997EAB252DF774006C3883 /* PsychomtryViewController.swift */,
 				2BAD467E252D03C9006E2507 /* AddNewCardViewController.swift */,
 				2BAD4677252D0005006E2507 /* SearchLoansViewController.swift */,
-				2B65FA3B252CDA8D0087D342 /* PyschometryTestViewController.swift */,
+				2B65FA3B252CDA8D0087D342 /* CreditScoreTestViewController.swift */,
 				2B65FA35252CD6460087D342 /* CreditScoreViewController.swift */,
 				2BF473F3252B7FF2000C7009 /* TabBar */,
 				2BF473E3252B5700000C7009 /* OTPViewController.swift */,
@@ -192,6 +214,7 @@
 				2BF473BA252B3C03000C7009 /* LoginViewController.swift */,
 				2BF473C1252B3FC0000C7009 /* PreferredLanguageViewController.swift */,
 				2BF4739A252B2F1D000C7009 /* ViewController.swift */,
+				2BA96377252E4475007BF33E /* FullLoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,9 +222,11 @@
 		2BF473C9252B4504000C7009 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2BA9637B252E51D9007BF33E /* LoanDetailsViewController.xib */,
+				2B997EAC252DF774006C3883 /* PsychomtryViewController.xib */,
 				2BAD467F252D03C9006E2507 /* AddNewCardViewController.xib */,
 				2BAD4678252D0005006E2507 /* SearchLoansViewController.xib */,
-				2B65FA3C252CDA8D0087D342 /* PyschometryTestViewController.xib */,
+				2B65FA3C252CDA8D0087D342 /* CreditScoreTestViewController.xib */,
 				2B65FA36252CD6460087D342 /* CreditScoreViewController.xib */,
 				2BF473F4252B7FFE000C7009 /* TabBar */,
 				2BF473C5252B44FB000C7009 /* DescribeViewController.xib */,
@@ -261,6 +286,8 @@
 			children = (
 				2BF47414252B983A000C7009 /* LoanCollectionViewCell.swift */,
 				2BF47415252B983A000C7009 /* LoanCollectionViewCell.xib */,
+				2B997EB1252DF8A1006C3883 /* PsychoCollectionViewCell.swift */,
+				2B997EB2252DF8A1006C3883 /* PsychoCollectionViewCell.xib */,
 			);
 			path = "Collectionview Cells";
 			sourceTree = "<group>";
@@ -342,14 +369,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B65FA38252CD6460087D342 /* CreditScoreViewController.xib in Resources */,
+				2B997EAE252DF774006C3883 /* PsychomtryViewController.xib in Resources */,
 				2BAD4675252CEECF006E2507 /* CardTableViewCell.xib in Resources */,
 				2B65FA30252CC6470087D342 /* LoanTableViewCell.xib in Resources */,
 				2BF473A3252B2F20000C7009 /* LaunchScreen.storyboard in Resources */,
+				2BA9637D252E51D9007BF33E /* LoanDetailsViewController.xib in Resources */,
 				2BF473CE252B4695000C7009 /* DescriptionTableViewCell.xib in Resources */,
 				2BF47410252B8BC4000C7009 /* TransactionsTableViewCell.xib in Resources */,
-				2B65FA3E252CDA8D0087D342 /* PyschometryTestViewController.xib in Resources */,
+				2B65FA3E252CDA8D0087D342 /* CreditScoreTestViewController.xib in Resources */,
 				2BF473D5252B50CE000C7009 /* CreateAccountViewController.xib in Resources */,
 				2BF47417252B983A000C7009 /* LoanCollectionViewCell.xib in Resources */,
+				2B997EB4252DF8A1006C3883 /* PsychoCollectionViewCell.xib in Resources */,
 				2BAD4681252D03C9006E2507 /* AddNewCardViewController.xib in Resources */,
 				2BF473A0252B2F20000C7009 /* Assets.xcassets in Resources */,
 				2BF473E6252B5700000C7009 /* OTPViewController.xib in Resources */,
@@ -412,21 +442,27 @@
 				2B65FA48252CDEE10087D342 /* ViewDivider.swift in Sources */,
 				2BF473E5252B5700000C7009 /* OTPViewController.swift in Sources */,
 				2BAD4679252D0005006E2507 /* SearchLoansViewController.swift in Sources */,
+				2BA96378252E4475007BF33E /* FullLoginViewController.swift in Sources */,
 				2BF473BB252B3C03000C7009 /* LoginViewController.swift in Sources */,
 				2BF4740F252B8BC4000C7009 /* TransactionsTableViewCell.swift in Sources */,
+				2B997EB7252E0093006C3883 /* PsychButton.swift in Sources */,
 				2BF473B6252B3A9E000C7009 /* InterfaceBuilderHelper.swift in Sources */,
 				2BAD4674252CEECF006E2507 /* CardTableViewCell.swift in Sources */,
 				2BAD4670252CEAB2006E2507 /* WalletViewController.swift in Sources */,
 				2BF473C2252B3FC0000C7009 /* PreferredLanguageViewController.swift in Sources */,
-				2B65FA3D252CDA8D0087D342 /* PyschometryTestViewController.swift in Sources */,
+				2B65FA3D252CDA8D0087D342 /* CreditScoreTestViewController.swift in Sources */,
+				2B997EB3252DF8A1006C3883 /* PsychoCollectionViewCell.swift in Sources */,
+				2B997EAD252DF774006C3883 /* PsychomtryViewController.swift in Sources */,
+				2B997EBC252E1094006C3883 /* CustomClass.swift in Sources */,
 				2BF473D4252B50CE000C7009 /* CreateAccountViewController.swift in Sources */,
 				2B65FA1C252BA2C10087D342 /* ProfileViewController.swift in Sources */,
 				2B65FA2F252CC6470087D342 /* LoanTableViewCell.swift in Sources */,
 				2BF473C6252B44FB000C7009 /* DescribeViewController.swift in Sources */,
 				2BF4739B252B2F1D000C7009 /* ViewController.swift in Sources */,
 				2BF47397252B2F1D000C7009 /* AppDelegate.swift in Sources */,
-				2B65FA4B252CE04F0087D342 /* PsychTextField.swift in Sources */,
+				2B65FA4B252CE04F0087D342 /* Textfields.swift in Sources */,
 				2BF473CD252B4695000C7009 /* DescriptionTableViewCell.swift in Sources */,
+				2BA9637C252E51D9007BF33E /* LoanDetailsViewController.swift in Sources */,
 				2B65FA37252CD6460087D342 /* CreditScoreViewController.swift in Sources */,
 				2B65FA20252BA3A30087D342 /* ProfileTableViewCell.swift in Sources */,
 				2BF47416252B983A000C7009 /* LoanCollectionViewCell.swift in Sources */,
@@ -512,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -567,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

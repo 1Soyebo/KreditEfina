@@ -12,6 +12,7 @@ class Constants{
     static let kreditDarkBlue = UIColor(hexString: "0F3057")
     static let kreditVeryLightBlue = UIColor(hexString: "E8FFFF")
     static let kreditlightGrey = UIColor(hexString: "06492C")
+    static let arrayUsers: [UserCredentials] = [.init(username: "Ciroma", password: "000000", usertype: .Borrower),.init(username: "Maria", password: "123456", usertype: .Lender)]
     
 }
 

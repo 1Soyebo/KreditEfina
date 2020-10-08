@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import PKHUD
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var blueCurvedView: UIView!
     @IBOutlet weak var creditScoreCardView: UIView!
     @IBOutlet weak var imgUser: UIImageView!
@@ -18,10 +20,21 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        HUD.flash(.label("Logged in as a \(HelperClass.currentUser!.usertype == .Borrower ? "Borrower":"Lender") 💰"),delay: 1)
         curveSomeUiElements()
         configureTblTransaactions()
         configureCollLoans()
+        configureIfLender()
         collectionPageControl.numberOfPages = 5
+    }
+    
+    fileprivate func configureIfLender(){
+        if HelperClass.currentUser!.usertype == .Lender{
+            blueCurvedView.backgroundColor = .clear
+            lblTitle.text = "Dashboard"
+            lblTitle.textColor = Constants.kreditDarkBlue
+            
+        }
     }
 
     fileprivate func curveSomeUiElements(){

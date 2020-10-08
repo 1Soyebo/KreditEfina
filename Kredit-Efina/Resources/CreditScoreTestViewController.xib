@@ -2,15 +2,31 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PyschometryTestViewController" customModule="Kredit_Efina" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditScoreTestViewController" customModule="Kredit_Efina" customModuleProvider="target">
             <connections>
                 <outlet property="btnNext" destination="ghT-T5-ipJ" id="d6t-1q-YES"/>
+                <outlet property="txtBills" destination="5SB-9y-NHX" id="Kfq-Rz-XBx"/>
+                <outlet property="txtCooperative" destination="U0I-7b-6c9" id="9NN-pJ-Krm"/>
+                <outlet property="txtDateOfBIrth" destination="cl4-tP-JD0" id="y9V-Kk-XeQ"/>
+                <outlet property="txtFrequentRecharge" destination="GNR-I9-Tne" id="jAz-Zd-Zd6"/>
+                <outlet property="txtFullname" destination="Nge-c4-3Ja" id="Ssb-66-thG"/>
+                <outlet property="txtGuarantosPhone" destination="rzF-5J-K5n" id="Vw3-Lp-hEl"/>
+                <outlet property="txtGurantorsPhoneNumber" destination="iBp-sy-OaG" id="K1t-pj-rOe"/>
+                <outlet property="txtLocation" destination="Hew-8B-paL" id="l4B-lU-YUD"/>
+                <outlet property="txtMaritalStatus" destination="NYA-1A-ziv" id="CN5-Uh-5v1"/>
+                <outlet property="txtNoCreditLoansTaken" destination="ugI-R6-QKv" id="tTo-T8-z0o"/>
+                <outlet property="txtNoOfDependents" destination="m3S-0a-WOh" id="Nb8-GP-8ra"/>
+                <outlet property="txtPhoneNumber" destination="Oqf-yV-Ha2" id="d1H-5p-I74"/>
+                <outlet property="txtStateOrigin" destination="nnN-lY-d3b" id="h28-2Q-DGx"/>
+                <outlet property="txtTypeOfBusiness" destination="4AX-5y-hBo" id="dL3-Wh-ilt"/>
+                <outlet property="txtYearsBusiness" destination="rKL-DE-b6C" id="MyO-wy-h2s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +35,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="1574"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Psychometry test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ9-sr-6fR">
-                    <rect key="frame" x="92.5" y="20" width="190.5" height="29"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Score Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ9-sr-6fR">
+                    <rect key="frame" x="94.5" y="20" width="186" height="29"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                     <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -182,13 +198,13 @@
                                                     <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AX-5y-hBo" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type of Business" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AX-5y-hBo" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="33" width="161.5" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="4xK-JX-RRq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                         </stackView>
@@ -201,7 +217,7 @@
                                                     <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Marital Status" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m3S-0a-WOh" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-Select One-" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m3S-0a-WOh" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="33" width="161.5" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="IVO-6G-Rux"/>
@@ -222,7 +238,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SB-9y-NHX" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yes/No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SB-9y-NHX" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="Tpg-d1-43l"/>
@@ -241,7 +257,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-R6-QKv" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-Select One-" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-R6-QKv" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="TEC-FL-wm2"/>
@@ -260,7 +276,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-I9-Tne" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-Select One-" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-I9-Tne" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="PVA-Cc-ysU"/>
@@ -279,7 +295,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKL-DE-b6C" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-Select One-" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKL-DE-b6C" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="hZ1-sy-sAj"/>
@@ -298,7 +314,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0I-7b-6c9" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yes/No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0I-7b-6c9" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="e3W-m4-bLT"/>
@@ -317,13 +333,13 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-c4-3Ja" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Guarantor's Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-c4-3Ja" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="Ypk-et-hR9"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -336,7 +352,7 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBp-sy-OaG" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Guarantor's Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBp-sy-OaG" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="E4u-ne-Hb3"/>
@@ -355,13 +371,13 @@
                                             <color key="textColor" red="0.058823529409999999" green="0.18823529410000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-5J-K5n" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Guarantor's Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-5J-K5n" customClass="PsychTextField" customModule="Kredit_Efina" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="33" width="343" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="xdv-Uf-a1i"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
@@ -374,6 +390,9 @@
                                     <state key="normal" title="Next">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="goToPsycoTest:" destination="-1" eventType="touchUpInside" id="PgQ-uI-l2R"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -457,15 +476,27 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="MUB-ob-WgM"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="Vgk-Io-RGZ"/>
                 </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-N2-4ia">
+                    <rect key="frame" x="0.0" y="16" width="44" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="yFr-54-Zw6"/>
+                    </constraints>
+                    <state key="normal" image="blue left chevron"/>
+                    <connections>
+                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="vJD-4Q-MlZ"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="fXj-N2-4ia" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="7CL-bF-IQF"/>
                 <constraint firstItem="fQ9-sr-6fR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ssg-sA-OV0"/>
                 <constraint firstItem="fQ9-sr-6fR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="UNl-4A-IlW"/>
                 <constraint firstItem="mJT-7Y-lbh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Wnh-3R-vD8"/>
                 <constraint firstItem="mJT-7Y-lbh" firstAttribute="top" secondItem="fQ9-sr-6fR" secondAttribute="bottom" constant="32" id="bYy-9I-nEz"/>
                 <constraint firstItem="mJT-7Y-lbh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nE1-Lt-jpZ"/>
+                <constraint firstItem="fXj-N2-4ia" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tRr-EX-SLS"/>
                 <constraint firstItem="mJT-7Y-lbh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zjJ-xi-lgh"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -473,6 +504,7 @@
         </view>
     </objects>
     <resources>
+        <image name="blue left chevron" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
