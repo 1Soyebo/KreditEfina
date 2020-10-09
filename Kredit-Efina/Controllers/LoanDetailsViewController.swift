@@ -84,7 +84,9 @@ class LoanDetailsViewController: UIViewController {
     @IBAction func handleApproveLoan(_ sender: Any) {
         
         if btnApprove.titleLabel?.text == "Apply for Loan 🚀"{
-            HUD.flash(.label("Your request has been sent to \(subTitle)"))
+            HUD.flash(.label("Your request has been sent to \(subTitle) 😏"),delay: 1)
+            self.dismiss(animated: true, completion: nil)
+
         }else{
             if HelperClass.currentUser?.userCardDets == nil{
                 HUD.flash(.label("Please Add a Card 🙏🏽"),delay: 1)
