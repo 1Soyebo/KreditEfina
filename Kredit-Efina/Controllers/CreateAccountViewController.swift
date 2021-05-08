@@ -30,16 +30,19 @@ class CreateAccountViewController: UIViewController {
             HUD.flash(.label("Enter your phone number 📞"),delay: 1)
             return
         }
-        sendTextMessage(phoneNumber: "8182929823"){
-            status in
-            if status{
-                DispatchQueue.main.async {
-                    HUD.flash(.label("A One-time-Password Has Been sent to \(self.txtPhoneNumber.text!)"),delay: 1)
-                    let otpView = OTPViewController(nibName: "OTPViewController", bundle: nil)
-                    self.navigationController?.pushViewController(otpView, animated: true)
-                }
-            }
+        
+//        sendTextMessage(phoneNumber: "8182929823"){
+//            status in
+//            if status{
+//            }
+//        }
+        
+        DispatchQueue.main.async {
+            HUD.flash(.label("A One-time-Password Has Been sent to \(self.txtPhoneNumber.text!)"),delay: 1)
+            let otpView = OTPViewController(nibName: "OTPViewController", bundle: nil)
+            self.navigationController?.pushViewController(otpView, animated: true)
         }
+
         
     }
 
